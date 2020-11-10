@@ -10,6 +10,7 @@
    
     /* Hide Overflow */
 body {
+   width:auto;
 overflow-x: hidden;
 margin:0%;
 background-image: url("bk2.png");
@@ -108,6 +109,17 @@ margin-right: 15px;
 .title span:after {
 left: 100%;
 margin-left: 15px;
+}
+   @media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (max-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+    body {
+        background-color: yellow;
+    }
 }
     </style>
 </head>
